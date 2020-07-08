@@ -15,13 +15,14 @@
     domains:
       - 192.168.33.10.xip.io
       - www.192.168.33.10.xip.io
-    repo_url: git@github.com:ansiblebook/mezzanine_example.git
+    repo_url: git@github.com:zhangyifei/mezzanine_example.git 
     locale: en_US.UTF-8
     # Variables below don't appear in Mezannine's fabfile.py
     # but I've added them for convenience
     conf_path: /etc/nginx/conf
     tls_enabled: True
-    python: "{{ venv_path }}/bin/python"
+    #python: "{{ venv_path }}/bin/python"
+    python: "/usr/bin/python3.4"
     database_name: "{{ proj_name }}"
     database_user: "{{ proj_name }}"
     database_host: localhost
